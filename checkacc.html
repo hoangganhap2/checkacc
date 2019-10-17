@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input" type="text">
+<button type="button" onclick="checkacc().value">Checkacc</button>
+<script>
+    reg=/^[a-z0-9]{6,}$/;
+    let check=document.getElementById("input").value;
+    function checkacc() {
+        reg=/^[a-z0-9]{6,}$/;
+        if(reg.test(check)){
+            alert("Tên hợp lệ");
+        }
+        alert("Tên không hợp lệ");
+    }
+
+</script>
+</body>
+</html>
